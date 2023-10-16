@@ -1,6 +1,6 @@
 const listaSpesa = [] ;
 
-const msg = document.querySelector('.alert');
+const msg = document.querySelector('.list');
 
 let product
 do{
@@ -13,5 +13,5 @@ do{
 listaSpesa.splice(listaSpesa.length-1, 1);
 
 for (let i = 0; i < listaSpesa.length; i++) {
-    msg.innerHTML += '<br>' + listaSpesa[i];
+    msg.innerHTML += '<li>' + listaSpesa[i] + '</li>'
 }
